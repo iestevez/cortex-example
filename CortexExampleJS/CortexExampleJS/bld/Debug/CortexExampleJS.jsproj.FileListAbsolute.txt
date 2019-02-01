@@ -1,0 +1,17 @@
+C:\Users\josei_000\Source\Repos\iestevez\cortex-example\CortexExampleJS\CortexExampleJS\bin\Debug\ReverseMap\resources.pri
+C:\Users\josei_000\Source\Repos\iestevez\cortex-example\CortexExampleJS\CortexExampleJS\bin\Debug\AppxManifest.xml
+C:\Users\josei_000\Source\Repos\iestevez\cortex-example\CortexExampleJS\CortexExampleJS\bin\Debug\CortexExampleJS.build.appxrecipe
+C:\Users\josei_000\Source\Repos\iestevez\cortex-example\CortexExampleJS\CortexExampleJS\bld\Debug\CortexExampleJS.jsproj.CoreCompileInputs.cache
+C:\Users\josei_000\Source\Repos\iestevez\cortex-example\CortexExampleJS\CortexExampleJS\bld\Debug\ResourceHandlingTask.state
+C:\Users\josei_000\Source\Repos\iestevez\cortex-example\CortexExampleJS\CortexExampleJS\bld\Debug\priconfig.xml
+C:\Users\josei_000\Source\Repos\iestevez\cortex-example\CortexExampleJS\CortexExampleJS\bld\Debug\priconfig.xml.intermediate
+C:\Users\josei_000\Source\Repos\iestevez\cortex-example\CortexExampleJS\CortexExampleJS\bld\Debug\layout.resfiles
+C:\Users\josei_000\Source\Repos\iestevez\cortex-example\CortexExampleJS\CortexExampleJS\bld\Debug\layout.resfiles.intermediate
+C:\Users\josei_000\Source\Repos\iestevez\cortex-example\CortexExampleJS\CortexExampleJS\bld\Debug\resources.resfiles
+C:\Users\josei_000\Source\Repos\iestevez\cortex-example\CortexExampleJS\CortexExampleJS\bld\Debug\resources.resfiles.intermediate
+C:\Users\josei_000\Source\Repos\iestevez\cortex-example\CortexExampleJS\CortexExampleJS\bld\Debug\pri.resfiles
+C:\Users\josei_000\Source\Repos\iestevez\cortex-example\CortexExampleJS\CortexExampleJS\bld\Debug\pri.resfiles.intermediate
+C:\Users\josei_000\Source\Repos\iestevez\cortex-example\CortexExampleJS\CortexExampleJS\bld\Debug\qualifiers.txt
+C:\Users\josei_000\Source\Repos\iestevez\cortex-example\CortexExampleJS\CortexExampleJS\bld\Debug\qualifiers.txt.intermediate
+C:\Users\josei_000\Source\Repos\iestevez\cortex-example\CortexExampleJS\CortexExampleJS\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\josei_000\Source\Repos\iestevez\cortex-example\CortexExampleJS\CortexExampleJS\bld\Debug\ProjectArchitectures.txt
