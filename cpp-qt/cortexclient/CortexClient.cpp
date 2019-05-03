@@ -14,12 +14,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 ***************/
 #include "CortexClient.h"
 
-#include <QUrl>
-#include <QJsonObject>
-#include <QJsonDocument>
-#include <QJsonParseError>
-#include <QJsonArray>
-#include <QtDebug>
+#include <QtCore/QUrl>
+#include <QtCore/QJsonObject>
+#include <QtCore/QJsonDocument>
+#include <QtCore/QJsonParseError>
+#include <QtCore/QJsonArray>
+#include <QtCore/QtDebug>
 
 
 // utility function

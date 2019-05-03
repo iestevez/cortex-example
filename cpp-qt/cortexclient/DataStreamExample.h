@@ -15,7 +15,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 #ifndef DATASTREAMEXAMPLE_H
 #define DATASTREAMEXAMPLE_H
 
-#include <QObject>
+#include <QtCore/QObject>
 #include "CortexClient.h"
 #include "HeadsetFinder.h"
 #include "SessionCreator.h"

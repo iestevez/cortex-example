@@ -15,8 +15,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 #ifndef HEADSETFINDER_H
 #define HEADSETFINDER_H
 
-#include <QObject>
-#include <QTimerEvent>
+#include <QtCore/QObject>
+#include <QtCore/QTimerEvent>
 #include "CortexClient.h"
 #include "Headset.h"
 

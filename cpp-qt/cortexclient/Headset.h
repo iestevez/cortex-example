@@ -15,8 +15,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 #ifndef HEADSET_H
 #define HEADSET_H
 
-#include <QString>
-#include <QJsonObject>
+#include <QtCore/QString>
+#include <QtCore/QJsonObject>
 
 /*
  * Store basic information about a Emotiv headset.

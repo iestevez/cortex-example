@@ -14,10 +14,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 ***************/
 #include "DataStreamExample.h"
 
-#include <QCoreApplication>
-#include <QJsonArray>
-#include <QJsonDocument>
-#include <QtDebug>
+#include <QtCore/QCoreApplication>
+#include <QtCore/QJsonArray>
+#include <QtCore/QJsonDocument>
+#include <QtCore/QtDebug>
 
 
 DataStreamExample::DataStreamExample(QObject *parent) : QObject(parent) {

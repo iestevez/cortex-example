@@ -1,0 +1,79 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cortexclient", "cortexclient\cortexclient.vcxproj", "{9C2BBF26-6CC1-3693-AC33-5E39D26F9D89}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "facialexpressions", "facialexpressions\facialexpressions.vcxproj", "{A7D2A980-CF48-35CC-911C-47E79EEAC227}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9C2BBF26-6CC1-3693-AC33-5E39D26F9D89} = {9C2BBF26-6CC1-3693-AC33-5E39D26F9D89}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "motion", "motion\motion.vcxproj", "{66EBB525-42BA-3161-B951-52043EB0E7E6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9C2BBF26-6CC1-3693-AC33-5E39D26F9D89} = {9C2BBF26-6CC1-3693-AC33-5E39D26F9D89}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eeg", "eeg\eeg.vcxproj", "{5AC0B2C8-1409-30CD-A02E-FE58DD3C3B61}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9C2BBF26-6CC1-3693-AC33-5E39D26F9D89} = {9C2BBF26-6CC1-3693-AC33-5E39D26F9D89}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "training", "training\training.vcxproj", "{94EF78D0-2335-300D-AD02-83BA494EDAFB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9C2BBF26-6CC1-3693-AC33-5E39D26F9D89} = {9C2BBF26-6CC1-3693-AC33-5E39D26F9D89}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mentalcommand", "mentalcommand\mentalcommand.vcxproj", "{0C67B044-BDD4-3EA7-9C99-24DB759B799C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9C2BBF26-6CC1-3693-AC33-5E39D26F9D89} = {9C2BBF26-6CC1-3693-AC33-5E39D26F9D89}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "marker", "marker\marker.vcxproj", "{25DACB82-BE16-38EA-8D27-8F382260D46C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9C2BBF26-6CC1-3693-AC33-5E39D26F9D89} = {9C2BBF26-6CC1-3693-AC33-5E39D26F9D89}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C2BBF26-6CC1-3693-AC33-5E39D26F9D89}.Debug|x64.ActiveCfg = Debug|x64
+		{9C2BBF26-6CC1-3693-AC33-5E39D26F9D89}.Debug|x64.Build.0 = Debug|x64
+		{9C2BBF26-6CC1-3693-AC33-5E39D26F9D89}.Release|x64.ActiveCfg = Release|x64
+		{9C2BBF26-6CC1-3693-AC33-5E39D26F9D89}.Release|x64.Build.0 = Release|x64
+		{A7D2A980-CF48-35CC-911C-47E79EEAC227}.Debug|x64.ActiveCfg = Debug|x64
+		{A7D2A980-CF48-35CC-911C-47E79EEAC227}.Debug|x64.Build.0 = Debug|x64
+		{A7D2A980-CF48-35CC-911C-47E79EEAC227}.Release|x64.ActiveCfg = Release|x64
+		{A7D2A980-CF48-35CC-911C-47E79EEAC227}.Release|x64.Build.0 = Release|x64
+		{66EBB525-42BA-3161-B951-52043EB0E7E6}.Debug|x64.ActiveCfg = Debug|x64
+		{66EBB525-42BA-3161-B951-52043EB0E7E6}.Debug|x64.Build.0 = Debug|x64
+		{66EBB525-42BA-3161-B951-52043EB0E7E6}.Release|x64.ActiveCfg = Release|x64
+		{66EBB525-42BA-3161-B951-52043EB0E7E6}.Release|x64.Build.0 = Release|x64
+		{5AC0B2C8-1409-30CD-A02E-FE58DD3C3B61}.Debug|x64.ActiveCfg = Debug|x64
+		{5AC0B2C8-1409-30CD-A02E-FE58DD3C3B61}.Debug|x64.Build.0 = Debug|x64
+		{5AC0B2C8-1409-30CD-A02E-FE58DD3C3B61}.Release|x64.ActiveCfg = Release|x64
+		{5AC0B2C8-1409-30CD-A02E-FE58DD3C3B61}.Release|x64.Build.0 = Release|x64
+		{94EF78D0-2335-300D-AD02-83BA494EDAFB}.Debug|x64.ActiveCfg = Debug|x64
+		{94EF78D0-2335-300D-AD02-83BA494EDAFB}.Debug|x64.Build.0 = Debug|x64
+		{94EF78D0-2335-300D-AD02-83BA494EDAFB}.Release|x64.ActiveCfg = Release|x64
+		{94EF78D0-2335-300D-AD02-83BA494EDAFB}.Release|x64.Build.0 = Release|x64
+		{0C67B044-BDD4-3EA7-9C99-24DB759B799C}.Debug|x64.ActiveCfg = Debug|x64
+		{0C67B044-BDD4-3EA7-9C99-24DB759B799C}.Debug|x64.Build.0 = Debug|x64
+		{0C67B044-BDD4-3EA7-9C99-24DB759B799C}.Release|x64.ActiveCfg = Release|x64
+		{0C67B044-BDD4-3EA7-9C99-24DB759B799C}.Release|x64.Build.0 = Release|x64
+		{25DACB82-BE16-38EA-8D27-8F382260D46C}.Debug|x64.ActiveCfg = Debug|x64
+		{25DACB82-BE16-38EA-8D27-8F382260D46C}.Debug|x64.Build.0 = Debug|x64
+		{25DACB82-BE16-38EA-8D27-8F382260D46C}.Release|x64.ActiveCfg = Release|x64
+		{25DACB82-BE16-38EA-8D27-8F382260D46C}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		Qt5Version = msvc2017_64
+		SolutionGuid = {CD92A4FD-F784-4053-A5F5-7C704AABCD96}
+	EndGlobalSection
+EndGlobal

@@ -1,11 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\nodejs",
-    "\\nodejs\\extra",
-    "\\nodejs\\lib",
-    "\\nodejs\\src"
+    "\\cpp-qt",
+    "\\cpp-qt\\cortexclient"
   ],
-  "SelectedNode": "\\nodejs",
+  "SelectedNode": "\\cpp-qt\\README.md",
   "PreviewInSolutionExplorer": false
 }

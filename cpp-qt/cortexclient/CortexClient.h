@@ -15,14 +15,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 #ifndef CORTEXCLIENT_H
 #define CORTEXCLIENT_H
 
-#include <QObject>
-#include <QWebSocket>
-#include <QString>
-#include <QList>
-#include <QStringList>
-#include <QMap>
-#include <QJsonObject>
-#include <QSslError>
+#include <QtCore/QObject>
+#include <QtWebSockets/QWebSocket>
+#include <QtCore/QString>
+#include <QtCore/QList>
+#include <QtCore/QStringList>
+#include <QtCore/QMap>
+#include <QtCore/QJsonObject>
+#include <QtNetwork/QSslError>
 #include "Headset.h"
 
 /*
