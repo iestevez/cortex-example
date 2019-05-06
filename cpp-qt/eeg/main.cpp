@@ -28,6 +28,6 @@ int main(int argc, char *argv[])
     qInfo() << "";
 
     // TODO use your Emotiv license to get EEG data
-    dse.start("eeg", "your Emotiv license goes here");
+    dse.start("eeg", "1f7bec32-1cd7-45e0-97a1-fe5c73cb843a");
     return a.exec();
 }

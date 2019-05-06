@@ -1,3 +1,2 @@
-﻿  Generate moc_predefs.h
-  main.cpp
-  motion.vcxproj -> C:\Users\Nacho\source\repos\iestevez\cortex-example\cpp-qt\motion\debug\motion.exe
+﻿  main.cpp
+c:\users\nacho\source\repos\iestevez\cortex-example\cpp-qt\cortexclient\datastreamexample.h(23): fatal error C1083: No se puede abrir el archivo incluir: 'lsl_cpp.h': No such file or directory

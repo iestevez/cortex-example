@@ -1,0 +1,15 @@
+﻿  Generate moc_predefs.h
+  Moc'ing CortexClient.h...
+  Moc'ing DataStreamExample.h...
+  Moc'ing HeadsetFinder.h...
+  Moc'ing SessionCreator.h...
+  CortexClient.cpp
+  DataStreamExample.cpp
+  Headset.cpp
+  HeadsetFinder.cpp
+  SessionCreator.cpp
+  moc_CortexClient.cpp
+  moc_DataStreamExample.cpp
+  moc_HeadsetFinder.cpp
+  moc_SessionCreator.cpp
+  cortexclient.vcxproj -> C:\Users\Nacho\source\repos\iestevez\cortex-example\cpp-qt\cortexclient\release\cortexclient.lib

@@ -18,9 +18,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 #include <QtCore/QJsonArray>
 #include <QtCore/QJsonDocument>
 #include <QtCore/QtDebug>
+#include <lsl_cpp.h>
 
 
-DataStreamExample::DataStreamExample(QObject *parent) : QObject(parent) {
+DataStreamExample::DataStreamExample(QObject *parent) : 
+	lslInfo { lsl::stream_info("SimpleStream", "EEG", 19) },
+	lslOutlet { lsl::stream_info(lslInfo) },
+	QObject(parent) {
+	
     connect(&client, &CortexClient::connected, this, &DataStreamExample::onConnected);
     connect(&client, &CortexClient::disconnected, this, &DataStreamExample::onDisconnected);
     connect(&client, &CortexClient::errorReceived, this, &DataStreamExample::onErrorReceived);
@@ -38,6 +43,9 @@ void DataStreamExample::start(QString stream, QString license) {
     nextDataTime = 0;
     timerId = 0;
     client.open();
+	
+	
+	//this->lslOutlet = lsl::stream_outlet(lslInfo);
 }
 
 void DataStreamExample::onConnected() {
@@ -87,8 +95,18 @@ void DataStreamExample::onStreamDataReceived(
     Q_UNUSED(sessionId);
     // a data stream can publish a lot of data
     // we display only a few data per second
+
+	//while (!lslOutlet.wait_for_consumers(120));
+	float sample[19];
+	int j = 0;
+	QJsonArray::const_iterator i;
+	for (i=data.begin(); i != data.end(); ++i,j++) {
+		sample[j] = (float)(*i).toDouble();
+	}
+	lslOutlet.push_sample(sample);
     if (time >= nextDataTime) {
-        qInfo() << stream << data;
+        qInfo() << stream << data.at(0)<<data;
+
         nextDataTime = time + 0.25;
     }
 }

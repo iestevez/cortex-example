@@ -20,6 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 #include "HeadsetFinder.h"
 #include "SessionCreator.h"
 #include "Headset.h"
+#include <lsl_cpp.h>
 
 /*
  * Connects to a headset and displays the data from a stream.
@@ -66,6 +67,10 @@ private:
     QString sessionId;
     double nextDataTime;
     int timerId;
+
+	// LSL attributes
+	const lsl::stream_info lslInfo;
+	lsl::stream_outlet lslOutlet;
 };
 
 #endif // DATASTREAMEXAMPLE_H
