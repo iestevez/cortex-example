@@ -22,8 +22,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 
 
 DataStreamExample::DataStreamExample(QObject *parent) : 
-	lslInfo { lsl::stream_info("SimpleStream", "EEG", 19) },
-	lslOutlet { lsl::stream_info(lslInfo) },
+	lslInfoEEG { lsl::stream_info("SimpleStream", "EEG", 20) },
+	lslOutletEEG { lsl::stream_info(lslInfoEEG) },
+	lslInfoStimulus {lsl::stream_info("StimulusStream", "Stimulus",1)},
+	lslOutletStimulus {lsl::stream_info(lslInfoStimulus)},
 	QObject(parent) {
 	
     connect(&client, &CortexClient::connected, this, &DataStreamExample::onConnected);
@@ -44,8 +46,6 @@ void DataStreamExample::start(QString stream, QString license) {
     timerId = 0;
     client.open();
 	
-	
-	//this->lslOutlet = lsl::stream_outlet(lslInfo);
 }
 
 void DataStreamExample::onConnected() {
@@ -87,7 +87,7 @@ void DataStreamExample::onSessionCreated(QString token, QString sessionId) {
 void DataStreamExample::onSubscribeOk(QString sid) {
     qInfo() << "Subscription successful, sid" << sid;
     qInfo() << "Receiving data for 30 seconds.";
-    timerId = startTimer(30*1000);
+    timerId = startTimer(120*1000);
 }
 
 void DataStreamExample::onStreamDataReceived(
@@ -97,13 +97,14 @@ void DataStreamExample::onStreamDataReceived(
     // we display only a few data per second
 
 	//while (!lslOutlet.wait_for_consumers(120));
-	float sample[19];
+	float sample[20];
 	int j = 0;
 	QJsonArray::const_iterator i;
 	for (i=data.begin(); i != data.end(); ++i,j++) {
-		sample[j] = (float)(*i).toDouble();
+		sample[j] = (*i).toDouble();
 	}
-	lslOutlet.push_sample(sample);
+	sample[19] = time;
+	lslOutletEEG.push_sample(sample);
     if (time >= nextDataTime) {
         qInfo() << stream << data.at(0)<<data;
 

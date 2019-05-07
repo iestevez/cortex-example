@@ -69,8 +69,10 @@ private:
     int timerId;
 
 	// LSL attributes
-	const lsl::stream_info lslInfo;
-	lsl::stream_outlet lslOutlet;
+	const lsl::stream_info lslInfoEEG;
+	const lsl::stream_info lslInfoStimulus;
+	lsl::stream_outlet lslOutletEEG;
+	lsl::stream_outlet lslOutletStimulus;
 };
 
 #endif // DATASTREAMEXAMPLE_H

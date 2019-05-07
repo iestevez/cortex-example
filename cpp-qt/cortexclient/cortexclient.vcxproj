@@ -155,6 +155,7 @@
   <ItemGroup>
     <ClCompile Include="CortexClient.cpp" />
     <ClCompile Include="DataStreamExample.cpp" />
+    <ClCompile Include="Generation.cpp" />
     <ClCompile Include="Headset.cpp" />
     <ClCompile Include="HeadsetFinder.cpp" />
     <ClCompile Include="SessionCreator.cpp" />
@@ -164,6 +165,7 @@
     </QtMoc>
     <QtMoc Include="DataStreamExample.h">
     </QtMoc>
+    <ClInclude Include="Generation.h" />
     <ClInclude Include="Headset.h" />
     <QtMoc Include="HeadsetFinder.h">
     </QtMoc>
