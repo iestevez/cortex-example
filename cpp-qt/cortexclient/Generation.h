@@ -1,6 +1,7 @@
 #pragma once
 #include <QTCore/QObject>
 #include <QtCore/QTimer>
+#include <QtCore/QtDebug>
 #include <lsl_cpp.h>
 
 class Generation :
@@ -35,8 +36,8 @@ public slots:
 	void nextPresentation();
 
 
-protected:
-	void timerEvent(QTimerEvent *event);
+//protected:
+//	void timerEvent(QTimerEvent *event);
 
 private:
 
@@ -44,7 +45,7 @@ private:
 	STATUS state;
 	std::vector<SEvent>::iterator nextStimulus;
 	lsl::stream_outlet &soutlet;
-	static const std::map<SType, SDescription> sdescriptor;
+	static   std::map<SType, SDescription> sdescriptor;
 
 };
 

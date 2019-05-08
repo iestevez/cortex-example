@@ -2,7 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\cpp-qt",
-    "\\cpp-qt\\cortexclient"
+    "\\cpp-qt\\cortexclient",
+    "\\cpp-qt\\eeg"
   ],
   "SelectedNode": "\\cpp-qt\\README.md",
   "PreviewInSolutionExplorer": false

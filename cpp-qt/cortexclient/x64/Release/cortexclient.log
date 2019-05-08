@@ -1,13 +1,16 @@
-﻿  Generate moc_predefs.h
+﻿  Moc'ing StimulatedEEG.h...
   Moc'ing CortexClient.h...
   Moc'ing DataStreamExample.h...
   Moc'ing HeadsetFinder.h...
   Moc'ing SessionCreator.h...
   CortexClient.cpp
   DataStreamExample.cpp
+  Generation.cpp
   Headset.cpp
   HeadsetFinder.cpp
   SessionCreator.cpp
+  StimulatedEEG.cpp
+  moc_StimulatedEEG.cpp
   moc_CortexClient.cpp
   moc_DataStreamExample.cpp
   moc_HeadsetFinder.cpp

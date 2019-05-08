@@ -1,6 +1,7 @@
 #include "Generation.h"
 
-const std::map<Generation::SType, Generation::SDescription> sdescriptor ={
+// Initialize static member sdescriptor: a map between stimulus patterns and descriptors 
+std::map<Generation::SType, Generation::SDescription> Generation::sdescriptor ={
 	{Generation::SILENCE, { 0,0,0 }},
 	{Generation::FLASH60_6,{5,5,60} },
 	{Generation::FLASH60_10,{3,3,60} },
@@ -8,7 +9,7 @@ const std::map<Generation::SType, Generation::SDescription> sdescriptor ={
 	{Generation::FLASH60_15,{2,2,60} }
 	};
 
-
+// Constructor: a lsl::stream_outlet is required.
 Generation::Generation(lsl::stream_outlet &outlet) : soutlet {outlet}
 {
 	
@@ -22,6 +23,11 @@ Generation::~Generation()
 
 }
 
+// Building a sequence of stimula. 
+// nstimula: number of patters in the sequence.
+// spattern: array of simulus patterns.
+// cycle_intervals: duration of each pattern. Positive values are interpreted
+// as cycles (show - hide) and negative patterns as time duration in miliseconds.
 void Generation::setStimulusSequence(int nstimula, Generation::SType spattern[], int cycle_intervals[]) {
 	
 	Generation::SEvent event;
@@ -38,6 +44,7 @@ void Generation::setStimulusSequence(int nstimula, Generation::SType spattern[],
 
 }
 
+// Once the sequence is created this method starts the production of stimula.
 void Generation::onStartStimulus() {
 	this->nextStimulus = this->sequence.begin();
 	this->state = STARTED;
@@ -47,11 +54,13 @@ void Generation::onStartStimulus() {
 void Generation::onStopStimulus() {
 	this->state = STOPPED;
 }
+
 void Generation::nextPresentation() {
 
 	if (this->state != STARTED)
 		return;
 
+	qInfo() << "Stimulo Lanzado";
 	Generation::SEvent event = *(this->nextStimulus);
 	Generation::SDescription sdesc = sdescriptor[event.stype];
 	float interval;
@@ -70,7 +79,7 @@ void Generation::nextPresentation() {
 	if (this->nextStimulus == this->sequence.end())
 		this->nextStimulus = this->sequence.begin();
 
-	QTimer::singleShot(interval, this, nextPresentation);
+	QTimer::singleShot(interval, this,&Generation::nextPresentation);
 
 
 }

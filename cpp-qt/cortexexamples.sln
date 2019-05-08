@@ -34,6 +34,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "marker", "marker\marker.vcx
 		{9C2BBF26-6CC1-3693-AC33-5E39D26F9D89} = {9C2BBF26-6CC1-3693-AC33-5E39D26F9D89}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "seeg", "seeg\seeg.vcxproj", "{B12702AD-ABFB-343A-A199-8E24837244A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -68,12 +70,16 @@ Global
 		{25DACB82-BE16-38EA-8D27-8F382260D46C}.Debug|x64.Build.0 = Debug|x64
 		{25DACB82-BE16-38EA-8D27-8F382260D46C}.Release|x64.ActiveCfg = Release|x64
 		{25DACB82-BE16-38EA-8D27-8F382260D46C}.Release|x64.Build.0 = Release|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x64.ActiveCfg = Debug|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x64.Build.0 = Debug|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x64.ActiveCfg = Release|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		Qt5Version = msvc2017_64
 		SolutionGuid = {CD92A4FD-F784-4053-A5F5-7C704AABCD96}
+		Qt5Version = msvc2017_64
 	EndGlobalSection
 EndGlobal
